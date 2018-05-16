@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>DO NOT USE THIS PACKAGE IN PRODUCTION.  It is an example of why you shouldn't blindly trust nuget packages</Description>
+    <Authors>D Betteridge</Authors>
+    <Company>D Betteridge</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+
+</Project>
